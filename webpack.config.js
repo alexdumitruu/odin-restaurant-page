@@ -22,14 +22,12 @@ module.exports = {
       },
       {
         test: /\.html$/i,
-        loader: "html-loader", //images
+        loader: "html-loader", //images in html
       },
       {
         test: /\.(png|svg|jpg|jpeg)$/i,
-        type: "asset/resource",
-      }
+        type: "asset/resource", //images in js
+      },
     ],
   },
-  
-  
 };
