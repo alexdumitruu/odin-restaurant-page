@@ -1,8 +1,8 @@
-const container = document.createElement('div');
 export { homePage };
 import restaurantImage from './images/image.png';
 
 const homePage = () => {
+    const container = document.createElement('div');
     let image = document.createElement('img');
     image.src = restaurantImage;
     image.alt = "restaurant-picture"
@@ -18,4 +18,5 @@ const homePage = () => {
     secondP.textContent = 'Experienta unei cafele desavarsite este sustinuta de spectaculoasa linie de rasnire, in jurul caruia a fost gandit intregul concept Manufaktura. Utilajul exclusivist este un produs 100% romanesc, creat si proiectat manual la Cluj, special pentru Manufaktura.';
     container.appendChild(firstP);
     container.appendChild(secondP);
+    return container;
 }

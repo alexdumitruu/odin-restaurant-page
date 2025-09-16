@@ -15,6 +15,19 @@ const contactBtn = document.querySelector('#contact-button');
 
 homeBtn.addEventListener('click', () => {
     content.innerHTML = "";
-    content.appendChild(homePage())
-})
+    const container = homePage();
+    content.appendChild(container);
+});
+
+menuBtn.addEventListener('click', () => {
+    content.innerHTML = "";
+    const container = menuPage();
+    content.appendChild(container);
+});
+
+contactBtn.addEventListener('click', () => {
+    content.innerHTML = "";
+    const container = contactPage();
+    content.appendChild(container);
+});
 
